@@ -11,21 +11,67 @@
     border: 1px solid rgb(38, 96, 143);
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
-.arvore{
+.arbusto{
     position: absolute;
     bottom: 0;
-    width: 80px;
-   animation: arvore-animação 2s infinite;
+    width: 130px;
+   animation: arbusto-animação 2.5s infinite linear;
 }
 
-@keyframes arvore-animação{
+.pokemon{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+}
+.pulo{
+    animation: pulo 500ms ease-out;
+}
+
+@keyframes arbusto-animação{
 from{
-    right: 0;
+    right: -80px;
 }
 
 to {
     right: 100%;
 }
+}
+
+@keyframes pulo {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 300px;
+    }
+    50%{
+        bottom: 300px;
+    }
+    60%{
+        bottom: 300px;
+    }
+    70%{
+        bottom: 300px;
+    }
+    80%{
+        bottom: 300px;
+    }
+    92%{
+        bottom: 290px;
+    }
+    94%{
+        bottom: 280px;
+    }
+    96%{
+        bottom: 270px;
+    }
+    98%{
+        bottom: 250px;
+    }
+    100% {
+        bottom: 0;
+    }
 }
