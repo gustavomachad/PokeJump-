@@ -18,16 +18,16 @@
     position: absolute;
     bottom: 0;
     width: 130px;
-   animation: arbusto-animação 2.5s infinite linear;
+    animation: arbusto-animação 2s infinite linear; 
 }
 
 .pokemon{
     width: 300px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 .pulo{
-    animation: pulo 500ms ease-out;
+    animation: pulo 0.8s ease-out;
 }
 
 @keyframes arbusto-animação{
@@ -45,31 +45,13 @@ to {
         bottom: 0;
     }
     40%{
-        bottom: 300px;
+        bottom: 200px;
     }
     50%{
-        bottom: 300px;
+        bottom: 200px;
     }
     60%{
-        bottom: 300px;
-    }
-    70%{
-        bottom: 300px;
-    }
-    80%{
-        bottom: 300px;
-    }
-    92%{
-        bottom: 290px;
-    }
-    94%{
-        bottom: 280px;
-    }
-    96%{
-        bottom: 270px;
-    }
-    98%{
-        bottom: 250px;
+        bottom: 100px;
     }
     100% {
         bottom: 0;
